@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+:root {
+    --light-green: #d5edeb;
+    --green: #63dbd0;
+    --brown: #403632;
+    --light-grey: #eee;
+    --white: #fff;
+    --oswald-font: 'Oswald', sans-serif;
+}
+
+body{
+    animation: bgchange 20s ease infinite;/*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
+    padding: 0px;
+    margin: 0px;
+}
+
+@keyframes bgchange{
+      0%   {background:#f6ab9c;}/*変化させたい色*/
+      25%  {background:#f6b379;}/*変化させたい色*/
+      50%  {background:#fdcbc1;}/*変化させたい色*/
+      75%  {background:#ffff8c;}/*変化させたい色*/
+      90%  {background:#b2dffb;}/*変化させたい色*/
+      100% {background:#f6ab9c;}/*変化させたい色*/
+ }
+ @keyframes gbchange{
+    0%   {background:#f22a01;}/*変化させたい色*/
+    25%  {background:#924400;}/*変化させたい色*/
+    50%  {background:#0fce02;}/*変化させたい色*/
+    75%  {background:#bfbf01;}/*変化させたい色*/
+    90%  {background:#017fcd;}/*変化させたい色*/
+    100% {background:#f22a01;}/*変化させたい色*/
+}
+
+.wave{
+    position:relative;
+    height:200px;/*何も表示されない場合は各波の親要素に高さを持たせましょう。*/
+}
+canvas{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+}
+
+
+header{
+    display: flex;
+    /*コンテンツの幅を左右に置いておく*/
+    justify-content: space-between;
+    height: 4.5rem;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+    line-height: 1;
+}
+p{
+    text-align: center;
+}
+h1{
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+    height: 100%;
+}
+.head nav ul {
+    display: flex;
+}
+
+.nav{
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    position: fixed;
+    line-height: 1;
+}
+.Menu{
+    height: 120px;
+}
+.Menu ul{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+.Menu li{
+    list-style: none;
+}
+
+
+/* ダークモード */
+
+.dark-mode{
+    animation: gbchange 20s ease infinite;/*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
+    color: #ddd;
+}
+.btn1{
+    position: fixed;
+    background-color:var(--brown);
+    font-size: 2rem;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+*スライドメニュー*/
+.btn-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%; /* 円形にする */
+    padding: 0;
+    transition: .4s;
+}
+#menu-open {
+    text-align: right;
+    border-radius: 50%; /* 丸い形にするための設定 */
+    background-color: #d5edeb;
+    color: #000; /* ボタンのテキスト色 */
+    padding: 10px 15px; /* ボタン内の余白 */
+    border: none; /* ボーダーを削除 */
+    cursor: pointer; /* マウスカーソルをポインターに変更 */
+    font-size: 24px; /* ボタンのテキストのフォントサイズ */
+}
+
+.icon-circle i {
+    color: var(--icon-color); /* アイコンの色 */
+    border-radius: 50%; /* 円形にする */
+    font-size: 24px; /* アイコンのサイズ */
+}
+/*アイコンの編集*/
+.btn-menu i {
+    /*margin-top: .25rem;*/
+    height: 2rem;
+    border-radius: 50%;
+    width: 2rem;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+}
+#menu-panel{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    padding: 1rem 2rem 2rem;
+    width: max(32vw, 20rem);
+    height: 100vh;
+    background-color: var(--brown);
+    box-shadow: 0 0 2rem var(--brown);
+    font-family: var(--oswald-font);
+    translate: 100vw;
+    justify-content: flex-start; /* コンテンツを上部に配置 */
+}
+/* 閉じるボタン */
+#menu-close {
+    border-radius: 50%; /* 丸い形にするための設定 */
+    background-color: #d5edeb;
+    color: #000; /* ボタンのテキスト色 */
+    padding: 10px 15px; /* ボタン内の余白 */
+    border: none; /* ボーダーを削除 */
+    cursor: pointer; /* マウスカーソルをポインターに変更 */
+    font-size: 24px; /* ボタンのテキストのフォントサイズ */
+}
+
+.menu-list {
+    list-style: none;
+}
+.menu-list li {
+    margin: 1.5rem 0;
+    opacity: 0;
+}
+.menu-list a{
+    display: block;
+    margin-right: 35px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+.menu-list a:hover {
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 4rem;
+    color: #C299FF;
+}
+
+.main1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+div.main2{
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    justify-content: center;
+}
+.right1{
+    text-align: center;
+}
+div.right2{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+div.left2{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.main3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+div.left3{
+    margin: 0%;
+    padding: 0%;
+}
+div.right3{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+h5{
+    padding: 0%;
+    margin: 0%;
+    font-weight: bold;
+    font-size: 3rem;
+    color:blueviolet;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 2rem;
+}
+li{
+    font-size: 1.5rem;
+    list-style: none;
+    display: flex;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(194, 153, 255);
+}
+.titlename{
+    padding-right: 2rem;
+}
+.answer{
+    padding-left: 2rem;
+}
+ul{
+    padding-top: 5rem
+}
+
+
+footer{
+    background-color:#C299FF;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+h4{   
+    margin: 0%;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.SNS_icon{
+    padding-bottom: 5%;
+}
+.flowbtn7{
+    border-radius:50%;
+    position:relative;
+    display:inline-block;
+    width:50px;
+    height:50px;
+    font-size:30px;
+    color:#fff!important;
+    text-decoration:none;
+    transition:.5s;
+    text-align: center;
+}
+.flowbtn7 i{
+    position:absolute;
+    top:50%;
+    left:50%;
+    -ms-transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+}
+ul.snsbtniti{
+    padding: 0!important;
+    width: 200px;
+    margin: 0 auto;
+}
+.snsbtniti{
+    display:flex;
+}
+.snsbtniti li{
+    flex:0  0 75%;
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    border-bottom: #C299FF;
+    text-align:center !important;
+}
+.flowbtn7:hover{
+    -webkit-transform:translateY(-5px);
+    -ms-transform:translateY(-5px);
+    transform:translateY(-5px);
+}
+/* Twitter */
+.fl_tw7{
+    background:linear-gradient(135deg, #13f1fc 0%,#0470dc 100%);
+}
+/* Instagramアイコン位置 */
+.insta_btn7 .fa-instagram{
+    font-size:35px;	
+}
+/* Instagram紫グラデ背景 */
+.insta_btn7{
+    background:-webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+    background:linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+    overflow:hidden;	
+}
+/* Instagramオレンジグラデ背景 */
+.insta_btn7:before{
+    content: '';
+    position:absolute;
+    top:27px;
+    left:-12px;
+    width:59px;
+    height:40px;
+    background:-webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+    background:radial-gradient(#ffdb2c 5%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+}
+/* YouTube */
+.fl_yu7{
+    background:linear-gradient(135deg, #f5515f 0%,#c9293c 100%);
+    font-size:26px;
+}
+
+ul.snsbtniti1{
+    padding: 0!important;
+    width: 200px;
+    margin: 0 auto;
+}
+.snsbtniti1{
+    display:flex;
+}
+.snsbtniti1 li{
+    flex:0  0 50%;
+    list-style: none;
+    border-bottom: #C299FF;
+    text-align:center !important;
+}
+
+.copyright{
+    color: white;
+    font-size: 1.5rem;
+    margin: 0px;
+    padding: 0px;
+}
+.copyright p{
+    padding: 0;
+    margin: 0;
+}

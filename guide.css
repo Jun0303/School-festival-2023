@@ -1,0 +1,338 @@
+@charset "utf-8";
+
+:root {
+    --light-green: #d5edeb;
+    --green: #63dbd0;
+    --brown: #403632;
+    --light-grey: #eee;
+    --white: #fff;
+    --oswald-font: 'Oswald', sans-serif;
+}
+header{
+    display: flex;
+    /*コンテンツの幅を左右に置いておく*/
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    width: 100%;
+    margin-top: 0px;
+    line-height: 1;
+}
+body{
+    animation: bgchange 20s ease infinite;/*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
+    padding: 0px;
+    margin: 0px;
+}
+
+@keyframes bgchange{
+      0%   {background:#f6ab9c;}/*変化させたい色*/
+      25%  {background:#f6b379;}/*変化させたい色*/
+      50%  {background:#fdcbc1;}/*変化させたい色*/
+      75%  {background:#ffff8c;}/*変化させたい色*/
+      90%  {background:#b2dffb;}/*変化させたい色*/
+      100% {background:#f6ab9c;}/*変化させたい色*/
+ }
+ @keyframes gbchange{
+    0%   {background:#f22a01;}/*変化させたい色*/
+    25%  {background:#924400;}/*変化させたい色*/
+    50%  {background:#0fce02;}/*変化させたい色*/
+    75%  {background:#bfbf01;}/*変化させたい色*/
+    90%  {background:#017fcd;}/*変化させたい色*/
+    100% {background:#f22a01;}/*変化させたい色*/
+}
+h1{
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+    height: 100%;
+}
+h2{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold; 
+}
+.head nav ul {
+    display: flex;
+}
+
+.nav{
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    position: fixed;
+    line-height: 1;
+}
+.menu{
+    height: 120px;
+}
+.menu ul{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+.menu li{
+    list-style: none;
+}
+
+
+
+/* ローディング画面 */
+#loading{
+    /*position:fixed;とinset:0で要素を画面いっぱいに広げることができる*/
+    transition: all 1.5s;
+    background-color: #fff;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    display: grid;
+    place-items: center;
+}
+.spinner{
+    width: 200px;
+    height: 200px;
+}
+/*ロード終了後に画面から消す*/
+.loaded{
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* ダークモード */
+
+.dark-mode{
+    animation: gbchange 20s ease infinite;/*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
+    color: #ddd;
+}
+.btan1{
+    position: fixed;
+    background-color:var(--brown);
+    font-size: 2rem;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+
+
+*スライドメニュー*/
+.btan-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%; /* 円形にする */
+    padding: 0;
+    transition: .4s;
+}
+#menu-open {
+    border-radius: 50%; /* 丸い形にするための設定 */
+    background-color: #d5edeb;
+    color: #000; /* ボタンのテキスト色 */
+    padding: 10px 15px; /* ボタン内の余白 */
+    border: none; /* ボーダーを削除 */
+    cursor: pointer; /* マウスカーソルをポインターに変更 */
+    font-size: 24px; /* ボタンのテキストのフォントサイズ */
+}
+
+.icon-circle i {
+    color: var(--icon-color); /* アイコンの色 */
+    border-radius: 50%; /* 円形にする */
+    font-size: 24px; /* アイコンのサイズ */
+}
+/*アイコンの編集*/
+.btan-menu i {
+    /*margin-top: .25rem;*/
+    height: 2rem;
+    border-radius: 50%;
+    width: 2rem;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+}
+#menu-panel{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    padding: 1rem 2rem 2rem;
+    width: max(32vw, 20rem);
+    height: 100vh;
+    background-color: var(--brown);
+    box-shadow: 0 0 2rem var(--brown);
+    font-family: var(--oswald-font);
+    translate: 100vw;
+    justify-content: flex-start; /* コンテンツを上部に配置 */
+}
+/* 閉じるボタン */
+#menu-close {
+    border-radius: 50%; /* 丸い形にするための設定 */
+    background-color: #d5edeb;
+    color: #000; /* ボタンのテキスト色 */
+    padding: 10px 15px; /* ボタン内の余白 */
+    border: none; /* ボーダーを削除 */
+    cursor: pointer; /* マウスカーソルをポインターに変更 */
+    font-size: 24px; /* ボタンのテキストのフォントサイズ */
+}
+
+.menu-list {
+    list-style: none;
+}
+.menu-list li {
+    margin: 1.5rem 0;
+    opacity: 0;
+}
+.menu-list a{
+    display: block;
+    margin-right: 35px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+.menu-list a:hover {
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:94%;
+    margin:0 auto;
+}
+
+.slider img {
+    width:60vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
+    height:auto;
+}
+
+.slider .slick-slide {
+	transform: scale(0.8);/*左右の画像のサイズを80%に*/
+	transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+	opacity: 0.5;/*透過50%*/
+}
+
+.slider .slick-slide.slick-center{
+	transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+	opacity: 1;/*透過なし*/
+}
+
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+	margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+	margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
+
+
+
+/*リンクの形状*/
+#page-top a{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background:red;
+	border-radius: 5px;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+	font-size:0.6rem;
+	transition:all 0.3s;
+}
+#page-top a:hover{
+	background: #63dbd0;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+	position: fixed;
+	right: 10px;
+	bottom:10px;
+	z-index: 2;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+
+#page-top.UpMove{
+	animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#page-top.DownMove{
+	animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(100px);
+  }
+}

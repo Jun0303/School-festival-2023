@@ -1,0 +1,836 @@
+/*参考　slick.css
+common_8.css*/
+
+
+@charset "utf-8";
+
+:root {
+    --light-green: #d5edeb;
+    --green: #63dbd0;
+    --brown: #403632;
+    --light-grey: #eee;
+    --white: #fff;
+    --oswald-font: 'Oswald', sans-serif;
+}
+body{
+  animation: bgchange 20s ease infinite;/*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
+  padding: 0px;
+  margin: 0px;
+}
+
+@keyframes bgchange{
+    0%   {background:#f6ab9c;}/*変化させたい色*/
+    25%  {background:#f6b379;}/*変化させたい色*/
+    50%  {background:#fdcbc1;}/*変化させたい色*/
+    75%  {background:#ffff8c;}/*変化させたい色*/
+    90%  {background:#b2dffb;}/*変化させたい色*/
+    100% {background:#f6ab9c;}/*変化させたい色*/
+}
+@keyframes gbchange{
+  0%   {background:#f22a01;}/*変化させたい色*/
+  25%  {background:#924400;}/*変化させたい色*/
+  50%  {background:#0fce02;}/*変化させたい色*/
+  75%  {background:#bfbf01;}/*変化させたい色*/
+  90%  {background:#017fcd;}/*変化させたい色*/
+  100% {background:#f22a01;}/*変化させたい色*/
+}
+header{
+    display: flex;
+    /*コンテンツの幅を左右に置いておく*/
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    width: 100%;
+    margin-top: 0px;
+    line-height: 1;
+}
+h1{
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+    height: 100%;
+}
+.head nav ul {
+    display: flex;
+}
+
+.nav{
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    position: fixed;
+    line-height: 1;
+}
+.Menu{
+    height: 120px;
+}
+.Menu ul{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+.Menu li{
+    list-style: none;
+}
+
+/* ダークモード */
+
+.dark-mode{
+  animation: gbchange 20s ease infinite;/*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
+  color: #ddd;
+}
+.btn1{
+  position: fixed;
+  background-color:var(--brown);
+  font-size: 2rem;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}
+
+/*スライドメニュー*/
+.btn-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%; /* 円形にする */
+    padding: 0;
+    transition: .4s;
+}
+#menu-open {
+    border-radius: 50%; /* 丸い形にするための設定 */
+    background-color: #d5edeb;
+    color: #000; /* ボタンのテキスト色 */
+    padding: 10px 15px; /* ボタン内の余白 */
+    border: none; /* ボーダーを削除 */
+    cursor: pointer; /* マウスカーソルをポインターに変更 */
+    font-size: 24px; /* ボタンのテキストのフォントサイズ */
+}
+
+.icon-circle i {
+    color: var(--icon-color); /* アイコンの色 */
+    border-radius: 50%; /* 円形にする */
+    font-size: 24px; /* アイコンのサイズ */
+}
+/*アイコンの編集*/
+.btn-menu i {
+    /*margin-top: .25rem;*/
+    height: 2rem;
+    border-radius: 50%;
+    width: 2rem;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+}
+#menu-panel{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    padding: 1rem 2rem 2rem;
+    width: max(32vw, 20rem);
+    height: 100vh;
+    background-color: var(--brown);
+    box-shadow: 0 0 2rem var(--brown);
+    font-family: var(--oswald-font);
+    translate: 100vw;
+    justify-content: flex-start; /* コンテンツを上部に配置 */
+}
+/* 閉じるボタン */
+#menu-close {
+    border-radius: 50%; /* 丸い形にするための設定 */
+    background-color: #d5edeb;
+    color: #000; /* ボタンのテキスト色 */
+    padding: 10px 15px; /* ボタン内の余白 */
+    border: none; /* ボーダーを削除 */
+    cursor: pointer; /* マウスカーソルをポインターに変更 */
+    font-size: 24px; /* ボタンのテキストのフォントサイズ */
+}
+
+.menu-list {
+    list-style: none;
+}
+.menu-list li {
+    margin: 1.5rem 0;
+    opacity: 0;
+}
+.menu-list a{
+    display: block;
+    margin-right: 35px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+.menu-list a:hover {
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+/*リンクの形状*/
+#page-top a{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background:red;
+	border-radius: 5px;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+	font-size:0.6rem;
+	transition:all 0.3s;
+}
+#page-top a:hover{
+	background: #63dbd0;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+	position: fixed;
+	right: 10px;
+	bottom:10px;
+	z-index: 2;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+
+#page-top.UpMove{
+	animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#page-top.DownMove{
+	animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(100px);
+  }
+}
+
+
+
+
+h2{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*gallery*/
+.grid_gallery ul{
+    display: flex;
+    flex-wrap: wrap;/*flexした要素をコンテンツ内に適切に配置する*/
+    justify-content: center;/*水平方向の配置を制御し、左側に配置*/
+    align-items: center;/*垂直方向の配置を制御し、中法に配置*/
+    padding: 0;/*要素の内側の余白を0で設定*/
+    margin: 0 0 15px 0;/*要素の外側に余白を設定*/
+    list-style: none;/*リストのマーカーを削除*/
+}
+
+.grid_gallery ul li {
+    width: calc((100% - 20px) / 6);/*横幅100％から20px分引いた値を3で割った結果を適応*/
+    padding: 0;
+    margin: 0 10px 10px 0;
+    position: relative;/*要素の配置方法を相対的に適応*/
+  }
+
+  /*5の倍数番目の要素を選択*/
+  .grid_gallery ul li:nth-child(5n) {
+    margin-right: 0;
+  }
+
+  .grid_gallery ul li a,
+.lity_slider-nav ul li span {
+  display: block;/*要素をブロックとして表示し、視覚的に100％占めるように適応*/
+  margin: 0 auto;/*上下の余白は0で設定し、左右は自動的に中央に設定する*/
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;/*コンテンツが要素からはみ出した時の表示法方を制御し、要素自体を境界内に収める*/
+  transition: 0.4s;
+  /*この組み合わせにより、高さが0でないように見える要素を作成し、
+  その要素内にコンテンツを収めつつ、コンテンツが要素の境界をはみ出さないように制御します。
+  このテクニックは、例えば画像のアスペクト比を維持しつつ、
+  リサイズ可能なコンテナを作成する場合などに役立ちます。*/
+}
+
+.grid_gallery ul li img:hover,
+.lity_slider-nav ul li span:hover {
+  text-decoration: none;
+ /*box-shadow: -3px -3px 10px rgba(0, 0, 0, 0.1), 3px 3px 10px rgba(0, 0, 0, 0.1);*/
+  transform: scale(1.02);/*カーソルが重なった時に1.02拡大する*/
+  z-index: 3;
+}
+
+.grid_gallery ul li a img,
+.lity_slider-nav ul li span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;/*コンテンツを要素内に収めつつ、
+  アスペクト比を保ったまま最大限に表示し、余白を設定しないことを指定します。*/
+  object-position: 50% 15%;
+  /*コンテンツを水平方向に中央配置（50%）し、
+  垂直方向に上から25%の位置に配置しています。*/
+}
+
+
+
+/* MODAL */
+/*ポップアップ画面の要素*/
+.photo_detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*画面の大きさ*/
+    width: 800px;
+    height: 500px;
+    padding: 0 0 0 320px;
+    background-color: #fff;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 640px;
+    border-radius: 6px 60px 6px 60px;
+  }
+
+
+  /*写真を追加時に記載*/
+  
+  #modal_photo-01 .photo_detail {
+    background-image: url(images/20210408-図書館②.jpg);
+  }
+  #modal_photo-02 .photo_detail {
+    background-image: url(images/20210414-クリスタルカフェ.jpg);
+  }
+  #modal_photo-03 .photo_detail {
+    background-image: url(images/20210415-リンクス⑩.jpg);
+  }
+  #modal_photo-04 .photo_detail {
+    background-image: url(images/20210415-リンクス⑪.jpg);
+  }
+  #modal_photo-05 .photo_detail {
+    background-image: url(images/20210415-旧バス停④.jpg);
+  }
+  #modal_photo-06 .photo_detail {
+    background-image: url(images/20210511-イノベーションラボ.jpg);
+  }
+  #modal_photo-07 .photo_detail {
+    background-image: url(images/20210511-リンクス⑧.jpg);
+  }
+  #modal_photo-08 .photo_detail {
+    background-image: url(images/20210511-リンクス⑨.jpg);
+  }
+  #modal_photo-09 .photo_detail {
+    background-image: url(images/20210511-リンクス大階段②.jpg);
+  }
+  #modal_photo-10 .photo_detail {
+    background-image: url(images/20210715-図書館①.jpg);
+  }
+  #modal_photo-11 .photo_detail {
+    background-image: url(images/20211006-タチバル.jpg);
+  }
+  #modal_photo-12 .photo_detail {
+    background-image: url(images/20211006-リンクス⑦.jpg);
+  }
+  #modal_photo-13 .photo_detail {
+    background-image: url(images/20211013-バス停②.jpg);
+  }
+  #modal_photo-14 .photo_detail {
+    background-image: url(images/20211013-リンクス⑤.jpg);
+  }
+  #modal_photo-15 .photo_detail {
+    background-image: url(images/20211013-リンクス⑥.jpg);
+  }
+  #modal_photo-16 .photo_detail {
+    background-image: url(images/20211022-グラウンド.jpg);
+  }
+  #modal_photo-17 .photo_detail {
+    background-image: url(images/20211022-リバティーホールの裏.jpg);
+  }
+  #modal_photo-18 .photo_detail {
+    background-image: url(images/20211022-弓道場.jpg);
+  }
+  #modal_photo-19 .photo_detail {
+    background-image: url(images/20211022-救急車がある広場.jpg);
+  }
+  #modal_photo-20 .photo_detail {
+    background-image: url(images/20211027-清優館と清香館の通路の上①.jpg);
+  }
+  #modal_photo-21 .photo_detail {
+    background-image: url(images/20211027-清優館と清香館の通路の上②.jpg);
+  }
+  #modal_photo-22 .photo_detail {
+    background-image: url(images/20211027-清香館からリンクスに入る通路.jpg);
+  }
+  #modal_photo-23 .photo_detail {
+    background-image: url(images/20211103-児優館.jpg);
+  }
+  #modal_photo-24 .photo_detail {
+    background-image: url(images/20211103-広場⑤.jpg);
+  }
+  #modal_photo-25 .photo_detail {
+    background-image: url(images/20211103-広場の時計.jpg);
+  }
+  #modal_photo-26 .photo_detail {
+    background-image: url(images/20211103-清優館の入口.jpg);
+  }
+  #modal_photo-27 .photo_detail {
+    background-image: url(images/20211103-清優館の入口の上.jpg);
+  }
+  #modal_photo-28 .photo_detail {
+    background-image: url(images/20211103-清優館の広場.jpg);
+  }
+  #modal_photo-29 .photo_detail {
+    background-image: url(images/20211103-清香館からリンクスに入る通路にある看板.jpg);
+  }
+  #modal_photo-30 .photo_detail {
+    background-image: url(images/20211109-mican②.jpg);
+  }
+  #modal_photo-31 .photo_detail {
+    background-image: url(images/20211109-食堂⑰.jpg);
+  }
+  #modal_photo-32 .photo_detail {
+    background-image: url(images/20211110-食堂⑯.jpg);
+  }
+  #modal_photo-33 .photo_detail {
+    background-image: url(images/20211116-響友館横の階段①.jpg);
+  }  #modal_photo-34 .photo_detail {
+    background-image: url(images/20211116-食堂⑮.jpg);
+  }  #modal_photo-35 .photo_detail {
+    background-image: url(images/20211119-mican横の地下.jpg);
+  }  #modal_photo-36 .photo_detail {
+    background-image: url(images/20211119-旧バス停③.jpg);
+  }  #modal_photo-37 .photo_detail {
+    background-image: url(images/20211119-竹④.jpg);
+  }  #modal_photo-38 .photo_detail {
+    background-image: url(images/20211119-食堂⑭.jpg);
+  }  #modal_photo-39 .photo_detail {
+    background-image: url(images/20211122-竹③.jpg);
+  }  #modal_photo-40 .photo_detail {
+    background-image: url(images/20211123-mican1階①.jpg);
+  }  #modal_photo-41 .photo_detail {
+    background-image: url(images/20211123-mican1階②.jpg);
+  }  #modal_photo-42 .photo_detail {
+    background-image: url(images/20211123-食堂⑬.jpg);
+  }  #modal_photo-43 .photo_detail {
+    background-image: url(images/20211126-リバティーホールの階段.jpg);
+  }  #modal_photo-44 .photo_detail {
+    background-image: url(images/20211126-広場③.jpg);
+  }  #modal_photo-45 .photo_detail {
+    background-image: url(images/20211126-広場④.jpg);
+  }  #modal_photo-46 .photo_detail {
+    background-image: url(images/20211126-清和館横の裏階段.jpg);
+  }  #modal_photo-47 .photo_detail {
+    background-image: url(images/20211126-竹と清和館.jpg);
+  }  #modal_photo-48 .photo_detail {
+    background-image: url(images/20211126-食堂⑫.jpg);
+  }  #modal_photo-49 .photo_detail {
+    background-image: url(images/20211127-クリスタルカフェ屋上④.jpg);
+  }  #modal_photo-50 .photo_detail {
+    background-image: url(images/20211127-リンクス⑤.jpg);
+  }  #modal_photo-51 .photo_detail {
+    background-image: url(images/20211127-リンクス大階段①.jpg);
+  }  #modal_photo-52 .photo_detail {
+    background-image: url(images/20211127-清和館3階.jpg);
+  }  #modal_photo-53 .photo_detail {
+    background-image: url(images/20211129-リンクス④.jpg);
+  }  #modal_photo-54 .photo_detail {
+    background-image: url(images/20211129-清優館と清香館の通路.jpg);
+  }  #modal_photo-55 .photo_detail {
+    background-image: url(images/20211129-清和館と明優館の通路③.jpg);
+  }  #modal_photo-56 .photo_detail {
+    background-image: url(images/20211129-竹①.jpg);
+  }  #modal_photo-57 .photo_detail {
+    background-image: url(images/20211129-竹②.jpg);
+  }  #modal_photo-58 .photo_detail {
+    background-image: url(images/20211201-食堂⑪.jpg);
+  }  #modal_photo-59 .photo_detail {
+    background-image: url(images/20211210-広場②.jpg);
+  }  #modal_photo-60 .photo_detail {
+    background-image: url(images/20211210-旧バス停②.jpg);
+  }  #modal_photo-61 .photo_detail {
+    background-image: url(images/20211214-食堂⑩.jpg);
+  }  #modal_photo-62 .photo_detail {
+    background-image: url(images/20211215-食堂⑨.jpg);
+  }  #modal_photo-63 .photo_detail {
+    background-image: url(images/20211217-リンクス③.jpg);
+  }  #modal_photo-64 .photo_detail {
+    background-image: url(images/20211217-優心館とバス停.jpg);
+  }  #modal_photo-65 .photo_detail {
+    background-image: url(images/20211220-食堂⑧.jpg);
+  }  #modal_photo-66 .photo_detail {
+    background-image: url(images/20211221-食堂⑦.jpg);
+  }  #modal_photo-67 .photo_detail {
+    background-image: url(images/20211222-グラウンド横の山.jpg);
+  }  #modal_photo-68 .photo_detail {
+    background-image: url(images/20211222-リンクス②.jpg);
+  }  #modal_photo-69 .photo_detail {
+    background-image: url(images/20211222-啓成館1階①.jpg);
+  }  #modal_photo-70 .photo_detail {
+  background-image: url(images/20211222-啓成館1階②.jpg);
+  }  #modal_photo-71 .photo_detail {
+    background-image: url(images/20220107-食堂⑥.jpg);
+  }  #modal_photo-72 .photo_detail {
+    background-image: url(images/20220301-リンクス2階.jpg);
+  }  #modal_photo-73 .photo_detail {
+    background-image: url(images/20220401-リバティーホール.jpg);
+  }  #modal_photo-74 .photo_detail {
+    background-image: url(images/20220401-広場①.jpg);
+  }  #modal_photo-75 .photo_detail {
+    background-image: url(images/20220401-清和館と明優館の通路②.jpg);
+  }  #modal_photo-76 .photo_detail {
+    background-image: url(images/20220412-リンクス6階③.jpg);
+  }  #modal_photo-77 .photo_detail {
+    background-image: url(images/20220413-食堂⑤.jpg);
+  }  #modal_photo-78 .photo_detail {
+    background-image: url(images/20220418-大学近くの工場.jpg);
+  }  #modal_photo-79 .photo_detail {
+    background-image: url(images/20220419-食堂④.jpg);
+  }  #modal_photo-80 .photo_detail {
+    background-image: url(images/20220510-食堂③.jpg);
+  }  #modal_photo-81 .photo_detail {
+    background-image: url(images/20220517-食堂②.jpg);
+  }  #modal_photo-82 .photo_detail {
+    background-image: url(images/20220518-コモンズセントラル.jpg);
+  }  #modal_photo-83 .photo_detail {
+    background-image: url(images/20220520-リンクス6階②.jpg);
+  }  #modal_photo-84 .photo_detail {
+    background-image: url(images/20220603-micanと響友館の通路の先.jpg);
+  }  #modal_photo-85 .photo_detail {
+    background-image: url(images/20220615-クリエーションラボ.jpg);
+  }  #modal_photo-86 .photo_detail {
+    background-image: url(images/20220628-リンクス6階①.jpg);
+  }  #modal_photo-87 .photo_detail {
+    background-image: url(images/20220720-優心館5階.jpg);
+  }  #modal_photo-88 .photo_detail {
+    background-image: url(images/20221030-大体育館.jpg);
+  }  #modal_photo-89 .photo_detail {
+    background-image: url(images/20221109-クリスタルカフェ屋上③.jpg);
+  }  #modal_photo-90 .photo_detail {
+    background-image: url(images/20221129-食堂①.jpg);
+  }  #modal_photo-91 .photo_detail {
+    background-image: url(images/20230228-クリスタルカフェ屋上②.jpg);
+  }  #modal_photo-92 .photo_detail {
+    background-image: url(images/20230228-清和館前の広場②.jpg);
+  }  #modal_photo-93 .photo_detail {
+    background-image: url(images/20230327-バスケコート.jpg);
+  }  #modal_photo-94 .photo_detail {
+    background-image: url(images/20230327-清風館前の坂.jpg);
+  }  #modal_photo-95 .photo_detail {
+    background-image: url(images/20230424-旧バス停①.jpg);
+  }  #modal_photo-96 .photo_detail {
+    background-image: url(images/20230424-リンクス①.jpg);
+  }  #modal_photo-97 .photo_detail {
+    background-image: url(images/20230428-mican①.jpg);
+  }  #modal_photo-98 .photo_detail {
+    background-image: url(images/20230531-バス停①.jpg);
+  }  #modal_photo-99 .photo_detail {
+    background-image: url(images1/20231016-micanと響友館の通路.jpg);
+  }  #modal_photo-100 .photo_detail {
+    background-image: url(images1/20231016-クリスタルカフェ屋上①.jpg);
+  }  #modal_photo-101 .photo_detail {
+    background-image: url(images1/20231016-優心館①.jpg);
+  }  #modal_photo-102 .photo_detail {
+    background-image: url(images1/20231016-優心館②.jpg);
+  }  #modal_photo-103 .photo_detail {
+    background-image: url(images1/20231016-図書館横の通路.jpg);
+  }  #modal_photo-104 .photo_detail {
+    background-image: url(images1/20231016-清和館と明優館の通路①.jpg);
+  }  #modal_photo-105 .photo_detail {
+    background-image: url(images1/20231016-清和館前の広場①.jpg);
+  }
+
+  /*
+  #modal_profile-wonyoung .member_detail {
+    background-image: url(../upload_img_20231013/profile_modal-wonyoung.jpg);
+  }
+  */
+  
+  /*ポップアップ画面のラベル（テキスト部分）*/
+  .photo_detail .elements{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    align-content: center;
+  }
+  .photo_detail .elements .data {
+    font-size: 1.5rem;
+    padding-bottom: 0;
+    font-family: freight-display-pro, serif;
+    line-height: 60%;
+  }
+  .photo_detail .elements .data {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    font-family: freight-display-pro, serif;
+    line-height: 60%;
+  }
+
+  .photo_detail .elements .place_title,.place ,.data_title {
+    font-size: 1.5rem;
+    padding: 0;
+    font-family: freight-display-pro, serif;
+    line-height: 40%;
+  }
+
+
+
+
+
+  /*==================================
+  lity.css
+  ==================================*/
+/* CUSTOMIZE */
+  /*! Lity * Copyright (c) 2016 Jan Sorgalla; Licensed MIT */
+  .lity {
+    z-index: 9990;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.92);
+    outline: none !important;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  /*jsで使用*/
+  .lity.lity-opened {
+    opacity: 1;
+  }
+  /*jsで使用*/
+  .lity.lity-closed {
+    opacity: 0;
+  }
+  .lity * {
+    box-sizing: border-box;
+  }
+  /*jsで使用*/
+  .lity-wrap {
+    z-index: 9990;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    outline: none !important;
+    /* overflow: auto; */
+    overflow: hidden;
+  }
+  /*jsで使用*/
+  .lity-wrap:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    /* margin-right: -0.25em; */
+  }
+  /*jsで使用*/
+  .lity-loader {
+    z-index: 9991;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.8em;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-family: source-han-sans-japanese, sans-serif;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  /*jsで使用*/
+  .lity-loading .lity-loader {
+    opacity: 1;
+  }
+  /*jsで使用*/
+  .lity-container {
+    z-index: 9992;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    white-space: normal;
+    max-width: 100%;
+    max-height: 100%;
+    outline: none !important;
+  }
+  /*jsで使用*/
+  .lity-content {
+    z-index: 9993;
+    width: 100%;
+    /* transform: scale(1); */
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+  }
+  /*jsで使用*/
+  .lity-loading .lity-content,
+  .lity-closed .lity-content {
+    /* transform: scale(0.8); */
+    transform: translateY(-90px);
+  }
+  /*jsで使用*/
+  .lity-content:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    right: 0;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); */
+  }
+  .lity-close {
+    z-index: 9994;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    /* -webkit-appearance: none; */
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+    color: #fff;
+    font-style: normal;
+    font-size: 35px;
+    font-family: source-han-sans-japanese, sans-serif;
+    line-height: 35px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    border: 0;
+    background: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .lity-close::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  .lity-close:hover,
+  .lity-close:focus,
+  .lity-close:active,
+  .lity-close:visited {
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+    color: #fff;
+    font-style: normal;
+    font-size: 35px;
+    font-family: source-han-sans-japanese, sans-serif;
+    line-height: 35px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    border: 0;
+    background: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .lity-close:active {
+    top: 1px;
+  }
+  .lity-image img {
+    max-width: 80vw;
+    max-height: 80vh !important;
+    display: block;
+    line-height: 0;
+    border: 0;
+  }
+  .lity-iframe .lity-container,
+  .lity-youtube .lity-container,
+  .lity-vimeo .lity-container,
+  .lity-facebookvideo .lity-container,
+  .lity-googlemaps .lity-container {
+    width: 100%;
+    max-width: 964px;
+  }
+  .lity-iframe-container {
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    overflow: auto;
+    pointer-events: auto;
+    transform: translateZ(0);
+    -webkit-overflow-scrolling: touch;
+  }
+  .lity-iframe-container iframe {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: #000;
+  }
+  
+  .lity-hide {
+    display: none;/*画面から表示されなくなる*/
+  }
+  
+  /* EDIT LITY */
+  /*ポップアップ画面*/
+  .lity-close {
+    width: 50px;
+    height: 50px;
+    right: 15px;
+    top: 35px;
+    text-shadow: none;
+    font-size: 0;
+    background-image: url(../2023学祭用/細いバツのアイコン.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    transition: 0.4s;
+  }
+  
+
+  /*ポップアップ画面*/
+  .lity-close:hover,
+  .lity-close:focus,
+  .lity-close:active,
+  .lity-close:visited {
+    width: 50px;
+    height: 50px;
+    right: 15px;
+    top: 35px;
+    text-shadow: none;
+    font-size: 0;
+    background-image: url(../2023学祭用/細いバツのアイコン1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+  }

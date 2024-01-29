@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ive-list.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="ive-list-lity.js"></script>
+    
+    
+    <title>Photo List</title>
+</head>
+<body>
+    <header>
+        <h1><a href="guide.html"><img src="logo1.png" alt="logo" width="300px" height="100px"></a></h1>
+            <nav>
+                <button id="menu-open" class="btn-menu"><span class="icon-circle">
+                    <i class="fas fa-bars"></i></span></button>
+               
+                <div id="menu-panel">
+                    <button id="menu-close" class="btn-menu"><span class="icon-circle">
+                        <i class="fas fa-times"></i></span></button>
+                    <button class="btn1" id="btn"><img id="imgElement" src="moon1.png" width="50px" height="50px" alt="画像"></button>
+                <ul class="menu-list">
+                    <li><a href="guide.html">Top</a></li>
+                    <li><a href="twice-list.html">List</a></li>
+                    <li><a href="Maker.html">Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h2 id="list_title">Photo List</h1>
+        <p id="page-top"><a href="#">Page Top</a></p>
+    <div class="grid_gallery">
+        <ul>
+            <li class="photo"><a href="#modal_photo-01" data-lity style="opacity: 1;">
+                <img src="images/20210408-図書館②.jpg" alt="図書館"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-02" data-lity style="opacity: 1;">
+                <img src="images/20210414-クリスタルカフェ.jpg" alt="クリスタルカフェ"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-03" data-lity style="opacity: 1;">
+                <img src="images/20210415-リンクス⑩.jpg" alt="アカデミックリンクス"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-04" data-lity style="opacity: 1;">
+                <img src="images/20210415-リンクス⑪.jpg" alt="アカデミックリンクス"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-05" data-lity style="opacity: 1;">
+                <img src="images/20210415-旧バス停④.jpg" alt="旧バス停"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-06" data-lity style="opacity: 1;">
+                <img src="images/20210511-イノベーションラボ.jpg" alt="イノベーションラボ"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-07" data-lity style="opacity: 1;">
+                <img src="images/20210511-リンクス⑧.jpg" alt="アカデミックリンクス"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-08" data-lity style="opacity: 1;">
+                <img src="images/20210511-リンクス⑨.jpg" alt="アカデミックリンクス"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-09" data-lity style="opacity: 1;">
+                <img src="images/20210511-リンクス大階段②.jpg" alt="アカデミックリンクス 大階段"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-10" data-lity style="opacity: 1;">
+                <img src="images/20210715-図書館①.jpg" alt="図書館"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-11" data-lity style="opacity: 1;">
+                <img src="images/20211006-タチバル.jpg" alt="Tachibal"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-12" data-lity style="opacity: 1;">
+                <img src="images/20211006-リンクス⑦.jpg" alt="アカデミックリンクス"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-13" data-lity style="opacity: 1;">
+                <img src="images/20211013-バス停②.jpg" alt="バス停"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-14" data-lity style="opacity: 1;">
+                <img src="images/20211013-リンクス⑤.jpg" alt="アカデミックリンクス"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-15" data-lity style="opacity: 1;">
+                <img src="images/20211013-リンクス⑥.jpg" alt="アカデミックリンクス"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-16" data-lity style="opacity: 1;">
+                <img src="images/20211022-グラウンド.jpg" alt="グラウンド"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-17" data-lity style="opacity: 1;">
+                <img src="images/20211022-リバティーホールの裏.jpg" alt="リバティーホール"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-18" data-lity style="opacity: 1;">
+                <img src="images/20211022-弓道場.jpg" alt="弓道場"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-19" data-lity style="opacity: 1;">
+                <img src="images/20211022-救急車がある広場.jpg" alt="広場"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-20" data-lity style="opacity: 1;">
+                <img src="images/20211027-清優館と清香館の通路の上①.jpg" alt="通路"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-21" data-lity style="opacity: 1;">
+                <img src="images/20211027-清優館と清香館の通路の上②.jpg" alt="通路"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-22" data-lity style="opacity: 1;">
+                <img src="images/20211027-清香館からリンクスに入る通路.jpg" alt="通路"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-23" data-lity style="opacity: 1;">
+                <img src="images/20211103-児優館.jpg" alt="児優館"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-24" data-lity style="opacity: 1;">
+                <img src="images/20211103-広場⑤.jpg" alt="広場"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-25" data-lity style="opacity: 1;">
+                <img src="images/20211103-広場の時計.jpg" alt="広場"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-26" data-lity style="opacity: 1;">
+                <img src="images/20211103-清優館の入口.jpg" alt="清優館"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-27" data-lity style="opacity: 1;">
+                <img src="images/20211103-清優館の入口の上.jpg" alt="清優館"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-28" data-lity style="opacity: 1;">
+                <img src="images/20211103-清優館の広場.jpg" alt="清優館"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-29" data-lity style="opacity: 1;">
+                <img src="images/20211103-清香館からリンクスに入る通路にある看板.jpg" alt="通路"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-30" data-lity style="opacity: 1;">
+                <img src="images/20211109-mican②.jpg" alt="mican"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-31" data-lity style="opacity: 1;">
+                <img src="images/20211109-食堂⑰.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-32" data-lity style="opacity: 1;">
+                <img src="images/20211110-食堂⑯.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-33" data-lity style="opacity: 1;">
+                <img src="images/20211116-響友館横の階段①.jpg" alt="state"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-34" data-lity style="opacity: 1;">
+                <img src="images/20211116-食堂⑮.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-35" data-lity style="opacity: 1;">
+                <img src="images/20211119-mican横の地下.jpg" alt="mican"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-36" data-lity style="opacity: 1;">
+                <img src="images/20211119-旧バス停③.jpg" alt="旧バス停"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-37" data-lity style="opacity: 1;">
+                <img src="images/20211119-竹④.jpg" alt="竹"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-38" data-lity style="opacity: 1;">
+                <img src="images/20211119-食堂⑭.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-39" data-lity style="opacity: 1;">
+                <img src="images/20211122-竹③.jpg" alt="竹"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-40" data-lity style="opacity: 1;">
+                <img src="images/20211123-mican1階①.jpg" alt="mican"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-41" data-lity style="opacity: 1;">
+                <img src="images/20211123-mican1階②.jpg" alt="mican"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-42" data-lity style="opacity: 1;">
+                <img src="images/20211123-食堂⑬.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-43" data-lity style="opacity: 1;">
+                <img src="images/20211126-リバティーホールの階段.jpg" alt="state"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-44" data-lity style="opacity: 1;">
+                <img src="images/20211126-広場③.jpg" alt="stage"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-45" data-lity style="opacity: 1;">
+                <img src="images/20211126-広場④.jpg" alt="stage"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-46" data-lity style="opacity: 1;">
+                <img src="images/20211126-清和館横の裏階段.jpg" alt="state"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-47" data-lity style="opacity: 1;">
+                <img src="images/20211126-竹と清和館.jpg" alt="竹"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-48" data-lity style="opacity: 1;">
+                <img src="images/20211126-食堂⑫.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-49" data-lity style="opacity: 1;">
+                <img src="images/20211127-クリスタルカフェ屋上④.jpg" alt="クリスタルカフェ"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-50" data-lity style="opacity: 1;">
+                <img src="images/20211127-リンクス⑤.jpg" alt="アカデミックリンクス"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-51" data-lity style="opacity: 1;">
+                <img src="images/20211127-リンクス大階段①.jpg" alt="大階段"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-52" data-lity style="opacity: 1;">
+                <img src="images/20211127-清和館3階.jpg" alt="清和館"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-53" data-lity style="opacity: 1;">
+                <img src="images/20211129-リンクス④.jpg" alt="アカデミックリンクス"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-54" data-lity style="opacity: 1;">
+                <img src="images/20211129-清優館と清香館の通路.jpg" alt="通路"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-55" data-lity style="opacity: 1;">
+                <img src="images/20211129-清和館と明優館の通路③.jpg" alt="通路"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-56" data-lity style="opacity: 1;">
+                <img src="images/20211129-竹①.jpg" alt="竹"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-57" data-lity style="opacity: 1;">
+                <img src="images/20211129-竹②.jpg" alt="竹"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-58" data-lity style="opacity: 1;">
+                <img src="images/20211201-食堂⑪.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-59" data-lity style="opacity: 1;">
+                <img src="images/20211210-広場②.jpg" alt="広場"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-60" data-lity style="opacity: 1;">
+                <img src="images/20211210-旧バス停②.jpg" alt="旧バス停"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-61" data-lity style="opacity: 1;">
+                <img src="images/20211214-食堂⑩.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-62" data-lity style="opacity: 1;">
+                <img src="images/20211215-食堂⑨.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-63" data-lity style="opacity: 1;">
+                <img src="images/20211217-リンクス③.jpg" alt="アカデミックリンクス"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-64" data-lity style="opacity: 1;">
+                <img src="images/20211217-優心館とバス停.jpg" alt="バス停"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-65" data-lity style="opacity: 1;">
+                <img src="images/20211220-食堂⑧.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-66" data-lity style="opacity: 1;">
+                <img src="images/20211221-食堂⑦.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-67" data-lity style="opacity: 1;">
+                <img src="images/20211222-グラウンド横の山.jpg" alt="グラウンド"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-68" data-lity style="opacity: 1;">
+                <img src="images/20211222-リンクス②.jpg" alt="アカデミックリンクス"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-69" data-lity style="opacity: 1;">
+                <img src="images/20211222-啓成館1階①.jpg" alt="啓成館"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-70" data-lity style="opacity: 1;">
+                <img src="images/20211222-啓成館1階②.jpg" alt="啓成館"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-71" data-lity style="opacity: 1;">
+                <img src="images/20220107-食堂⑥.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-72" data-lity style="opacity: 1;">
+                <img src="images/20220301-リンクス2階.jpg" alt="アカデミックリンクス"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-73" data-lity style="opacity: 1;">
+                <img src="images/20220401-リバティーホール.jpg" alt="リバティーホール"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-74" data-lity style="opacity: 1;">
+                <img src="images/20220401-広場①.jpg" alt="広場"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-75" data-lity style="opacity: 1;">
+                <img src="images/20220401-清和館と明優館の通路②.jpg" alt="通路"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-76" data-lity style="opacity: 1;">
+                <img src="images/20220412-リンクス6階③.jpg" alt="アカデミックリンクス"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-77" data-lity style="opacity: 1;">
+                <img src="images/20220413-食堂⑤.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-78" data-lity style="opacity: 1;">
+                <img src="images/20220418-大学近くの工場.jpg" alt="工場"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-79" data-lity style="opacity: 1;">
+                <img src="images/20220419-食堂④.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-80" data-lity style="opacity: 1;">
+                <img src="images/20220510-食堂③.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-81" data-lity style="opacity: 1;">
+                <img src="images/20220517-食堂②.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-82" data-lity style="opacity: 1;">
+                <img src="images/20220518-コモンズセントラル.jpg" alt="コモンズセントラル"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-83" data-lity style="opacity: 1;">
+                <img src="images/20220520-リンクス6階②.jpg" alt="アカデミックリンクス"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-84" data-lity style="opacity: 1;">
+                <img src="images/20220603-micanと響友館の通路の先.jpg" alt="通路"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-85" data-lity style="opacity: 1;">
+                <img src="images/20220615-クリエーションラボ.jpg" alt="クリエーションラボ"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-86" data-lity style="opacity: 1;">
+                <img src="images/20220628-リンクス6階①.jpg" alt="アカデミックリンクス"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-87" data-lity style="opacity: 1;">
+                <img src="images/20220720-優心館5階.jpg" alt="優心館"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-88" data-lity style="opacity: 1;">
+                <img src="images/20221030-大体育館.jpg" alt="中央体育館"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-89" data-lity style="opacity: 1;">
+                <img src="images/20221109-クリスタルカフェ屋上③.jpg" alt="クリスタルカフェ"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-90" data-lity style="opacity: 1;">
+                <img src="images/20221129-食堂①.jpg" alt="food"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-91" data-lity style="opacity: 1;">
+                <img src="images/20230228-クリスタルカフェ屋上②.jpg" alt="クリスタルカフェ"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-92" data-lity style="opacity: 1;">
+                <img src="images/20230228-清和館前の広場②.jpg" alt="広場"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-93" data-lity style="opacity: 1;">
+                <img src="images/20230327-バスケコート.jpg" alt="バスケコート"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-94" data-lity style="opacity: 1;">
+                <img src="images/20230327-清風館前の坂.jpg" alt="street"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-95" data-lity style="opacity: 1;">
+                <img src="images/20230424-旧バス停①.jpg" alt="旧バス停"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-96" data-lity style="opacity: 1;">
+                <img src="images/20230424-リンクス①.jpg" alt="アカデミックリンクス"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-97" data-lity style="opacity: 1;">
+                <img src="images/20230428-mican①.jpg" alt="mican"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-98" data-lity style="opacity: 1;">
+                <img src="images/20230531-バス停①.jpg" alt="バス停"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-99" data-lity style="opacity: 1;">
+                <img src="images1/20231016-micanと響友館の通路.jpg" alt="通路"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-100" data-lity style="opacity: 1;">
+                <img src="images1/20231016-クリスタルカフェ屋上①.jpg" alt="クリスタルカフェ"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-101" data-lity style="opacity: 1;">
+                <img src="images1/20231016-優心館①.jpg" alt="優心館"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-102" data-lity style="opacity: 1;">
+                <img src="images1/20231016-優心館②.jpg" alt="優心館"></a>
+            </li>
+            </li>
+            <li class="photo"><a href="#modal_photo-103" data-lity style="opacity: 1;">
+                <img src="images1/20231016-図書館横の通路.jpg" alt="通路"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-104" data-lity style="opacity: 1;">
+                <img src="images1/20231016-清和館と明優館の通路①.jpg" alt="通路"></a>
+            </li>
+            <li class="photo"><a href="#modal_photo-105" data-lity style="opacity: 1;">
+                <img src="images1/20231016-清和館前の広場①.jpg" alt="広場"></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MODAL PROFILE -->
+    <div id="modal_photo-01" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/04/08</p>
+                <p class="place_title">Place</p>
+                <p class="place">Library</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-02" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/04/14</p>
+                <p class="place_title">Place</p>
+                <p class="place">Crystal cafe</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-03" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/04/15</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-04" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/04/15</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-05" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/04/15</p>
+                <p class="place_title">Place</p>
+                <p class="place">Old bus stop</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-06" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/05/11</p>
+                <p class="place_title">Place</p>
+                <p class="place">Innovation lab</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-07" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/05/11</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-08" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/05/11</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-09" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/05/11</p>
+                <p class="place_title">Place</p>
+                <p class="place">Grand staircase</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-10" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/07/15</p>
+                <p class="place_title">Place</p>
+                <p class="place">Library</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-11" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/10/06</p>
+                <p class="place_title">Place</p>
+                <p class="place">Tachibal</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-12" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/10/06</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-13" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/10/13</p>
+                <p class="place_title">Place</p>
+                <p class="place">Bus stop</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-14" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/10/13</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-15" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/10/13</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-16" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/10/22</p>
+                <p class="place_title">Place</p>
+                <p class="place">Ground</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-17" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/10/22</p>
+                <p class="place_title">Place</p>
+                <p class="place">Liberty hall</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-18" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/10/22</p>
+                <p class="place_title">Place</p>
+                <p class="place">Kyudo hall</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-19" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/10/22</p>
+                <p class="place_title">Place</p>
+                <p class="place">Square</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-20" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/10/27</p>
+                <p class="place_title">Place</p>
+                <p class="place">Street</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-21" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/10/27</p>
+                <p class="place_title">Place</p>
+                <p class="place">Street</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-22" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/10/27</p>
+                <p class="place_title">Place</p>
+                <p class="place">Street</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-23" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/03</p>
+                <p class="place_title">Place</p>
+                <p class="place">Square</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-24" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/03</p>
+                <p class="place_title">Place</p>
+                <p class="place">Square</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-25" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/03</p>
+                <p class="place_title">Place</p>
+                <p class="place">Jiyukan</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-26" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/03</p>
+                <p class="place_title">Place</p>
+                <p class="place">Seiyukan</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-27" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/03</p>
+                <p class="place_title">Place</p>
+                <p class="place">Seiyukan</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-28" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/03</p>
+                <p class="place_title">Place</p>
+                <p class="place">Seiyukan</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-29" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/03</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-30" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/09</p>
+                <p class="place_title">Place</p>
+                <p class="place">mican</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-31" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/09</p>
+                <p class="place_title">Place</p>
+                <p class="place">kyoyukan</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-32" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/10</p>
+                <p class="place_title">Place</p>
+                <p class="place">Tachibal</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-33" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/16</p>
+                <p class="place_title">Place</p>
+                <p class="place">kyoyukan</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-34" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/16</p>
+                <p class="place_title">Place</p>
+                <p class="place">Tachibal</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-35" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/19</p>
+                <p class="place_title">Place</p>
+                <p class="place">mican</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-36" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/19</p>
+                <p class="place_title">Place</p>
+                <p class="place">Old bus stop</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-37" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/19</p>
+                <p class="place_title">Place</p>
+                <p class="place">Bistro</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-38" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/19</p>
+                <p class="place_title">Place</p>
+                <p class="place">Street</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-39" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/22</p>
+                <p class="place_title">Place</p>
+                <p class="place">Bamboo</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-40" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/23</p>
+                <p class="place_title">Place</p>
+                <p class="place">mican</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-41" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/23</p>
+                <p class="place_title">Place</p>
+                <p class="place">mican</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-42" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/23</p>
+                <p class="place_title">Place</p>
+                <p class="place">Tachibal</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-43" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/26</p>
+                <p class="place_title">Place</p>
+                <p class="place">Liberty hall</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-44" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/26</p>
+                <p class="place_title">Place</p>
+                <p class="place">Square</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-45" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/26</p>
+                <p class="place_title">Place</p>
+                <p class="place">Square</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-46" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/26</p>
+                <p class="place_title">Place</p>
+                <p class="place">kyoyukan</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-47" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/26</p>
+                <p class="place_title">Place</p>
+                <p class="place">Seiwakan</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-48" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/26</p>
+                <p class="place_title">Place</p>
+                <p class="place">Square</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-49" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/27</p>
+                <p class="place_title">Place</p>
+                <p class="place">Crystal cafe</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-50" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/27</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-51" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/27</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-52" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/27</p>
+                <p class="place_title">Place</p>
+                <p class="place">Seiwakan</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-53" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/29</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-54" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/29</p>
+                <p class="place_title">Place</p>
+                <p class="place">Street</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-55" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/29</p>
+                <p class="place_title">Place</p>
+                <p class="place">Street</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-56" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/29</p>
+                <p class="place_title">Place</p>
+                <p class="place">Bamboo</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-57" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/11/29</p>
+                <p class="place_title">Place</p>
+                <p class="place">Bamboo</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-58" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/12/01</p>
+                <p class="place_title">Place</p>
+                <p class="place">Bistro</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-59" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/12/10</p>
+                <p class="place_title">Place</p>
+                <p class="place">Old bus stop</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-60" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/12/10</p>
+                <p class="place_title">Place</p>
+                <p class="place">Square</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-61" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/12/14</p>
+                <p class="place_title">Place</p>
+                <p class="place">Tachibal</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-62" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/12/15</p>
+                <p class="place_title">Place</p>
+                <p class="place">Tachibal</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-63" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/12/17</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-64" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/12/17</p>
+                <p class="place_title">Place</p>
+                <p class="place">Yusinkan</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-65" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/12/20</p>
+                <p class="place_title">Place</p>
+                <p class="place">Bistro</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-66" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/12/21</p>
+                <p class="place_title">Place</p>
+                <p class="place">Bistro</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-67" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/12/22</p>
+                <p class="place_title">Place</p>
+                <p class="place">Ground</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-68" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/12/22</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-69" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/12/22</p>
+                <p class="place_title">Place</p>
+                <p class="place">Keiseikan</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-70" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2021/12/22</p>
+                <p class="place_title">Place</p>
+                <p class="place">Keiseikan</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-71" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/01/07</p>
+                <p class="place_title">Place</p>
+                <p class="place">kyoyukan</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-72" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/03/01</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-73" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/04/01</p>
+                <p class="place_title">Place</p>
+                <p class="place">Liberty hall</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-74" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/04/01</p>
+                <p class="place_title">Place</p>
+                <p class="place">Square</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-75" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/04/01</p>
+                <p class="place_title">Place</p>
+                <p class="place">Street</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-76" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/04/12</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-77" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/04/13</p>
+                <p class="place_title">Place</p>
+                <p class="place">Bistro</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-78" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/04/18</p>
+                <p class="place_title">Place</p>
+                <p class="place">Construction</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-79" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/04/19</p>
+                <p class="place_title">Place</p>
+                <p class="place">Bistro</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-80" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/05/10</p>
+                <p class="place_title">Place</p>
+                <p class="place">Bistro</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-81" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/05/17</p>
+                <p class="place_title">Place</p>
+                <p class="place">Bistro</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-82" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/05/18</p>
+                <p class="place_title">Place</p>
+                <p class="place">Commons central</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-83" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/05/20</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-84" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/06/03</p>
+                <p class="place_title">Place</p>
+                <p class="place">Street</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-85" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/06/15</p>
+                <p class="place_title">Place</p>
+                <p class="place">Creation lab</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-86" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/06/28</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-87" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/07/20</p>
+                <p class="place_title">Place</p>
+                <p class="place">Yusinkan</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-88" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/10/30</p>
+                <p class="place_title">Place</p>
+                <p class="place">Central gymnasium</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-89" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/11/09</p>
+                <p class="place_title">Place</p>
+                <p class="place">Crystal cafe</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-90" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2022/11/29</p>
+                <p class="place_title">Place</p>
+                <p class="place">Crystal cafe</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-91" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2023/02/28</p>
+                <p class="place_title">Place</p>
+                <p class="place">Crystal cafe</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-92" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2023/02/28</p>
+                <p class="place_title">Place</p>
+                <p class="place">Square</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-93" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2023/03/27</p>
+                <p class="place_title">Place</p>
+                <p class="place">Basketball court</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-94" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2023/03/27</p>
+                <p class="place_title">Place</p>
+                <p class="place">Street</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-95" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2023/04/24</p>
+                <p class="place_title">Place</p>
+                <p class="place">Academic links</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-96" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2023/04/24</p>
+                <p class="place_title">Place</p>
+                <p class="place">Old bus stop</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-97" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2023/04/28</p>
+                <p class="place_title">Place</p>
+                <p class="place">mican</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-98" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2023/05/31</p>
+                <p class="place_title">Place</p>
+                <p class="place">Bus stop</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-99" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2023/10/16</p>
+                <p class="place_title">Place</p>
+                <p class="place">Street</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-100" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2023/10/16</p>
+                <p class="place_title">Place</p>
+                <p class="place">Crystal cafe</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-101" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2023/10/16</p>
+                <p class="place_title">Place</p>
+                <p class="place">Street</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-102" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2023/10/16</p>
+                <p class="place_title">Place</p>
+                <p class="place">Street</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-103" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2023/10/16</p>
+                <p class="place_title">Place</p>
+                <p class="place">Seiwakan</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-104" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2023/10/16</p>
+                <p class="place_title">Place</p>
+                <p class="place">Yusinkan</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_photo-105" class="lity-hide" style="max-height: 521px;">
+        <div class="photo_detail">
+            <div class="elements">
+                <p class="data_title">Date</p>
+                <p class="data">2023/10/16</p>
+                <p class="place_title">Place</p>
+                <p class="place">Yusinkan</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+//ダークモード設定
+const btn = document.querySelector('#btn')
+const imgElement = document.querySelector('#imgElement');
+
+const imgUrls = ["moon.png","sun.png"];
+let currentImg = 0;
+
+btn.addEventListener("click" ,() => {
+    currentImg = (currentImg + 1) % imgUrls.length;
+    imgElement.src = imgUrls[currentImg];
+    document.body.classList.toggle('dark-mode');
+});
+
+
+/*
+スライドメニュー*/
+const menuOpen = document.querySelector('#menu-open');
+const menuClose = document.querySelector('#menu-close');
+const menuPanel = document.querySelector('#menu-panel');
+const menuItems = document.querySelectorAll('#menu-panel li');
+const menuOptions = {
+  duration: 1400,
+  easing: 'ease',
+  fill: 'forwards',
+};
+
+// メニューを開く
+menuOpen.addEventListener('click', () => {
+  menuPanel.animate({translate: ['100vw', 0]}, menuOptions);
+
+  // リンクをひとつずつ順に表示
+  menuItems.forEach((menuItem, index) => {
+    //console.log(`${index}番目のリスト`);
+    menuItem.animate(
+      {
+        opacity: [0, 1],
+        translate: ['2rem', 0],
+      },
+      {
+        duration: 2400,
+        delay: 300 * index,
+        easing: 'ease',
+        fill: 'forwards',
+      }
+    );
+  });
+});
+
+// メニューを閉じる
+menuClose.addEventListener('click', () => {
+  menuPanel.animate({translate: [0, '100vw']}, menuOptions);
+  menuItems.forEach((menuItem) => {
+    menuItem.animate({opacity: [1, 0]}, menuOptions);
+  });
+});
+
+
+
+    //titleのアニメーション
+const list_title = document.querySelector('#list_title');
+
+const keyframes = {
+    //透明度
+    opacity: [0, 1],
+    //下から30px上に移動する
+    translate: ['0 30px', 0],
+};
+const options = {
+    //再生時間
+    duration: 1000,
+    //アニメーションの動き
+    easing: 'ease-out',
+};
+  
+list_title.animate(keyframes, options);
+
+
+//スクロールした際の動きを関数でまとめる
+function PageTopAnime() {
+	var scroll = $(window).scrollTop();
+	if (scroll >= 200){//上から200pxスクロールしたら
+		$('#page-top').removeClass('DownMove');//#page-topについているDownMoveというクラス名を除く
+		$('#page-top').addClass('UpMove');//#page-topについているUpMoveというクラス名を付与
+	}else{
+		if($('#page-top').hasClass('UpMove')){//すでに#page-topにUpMoveというクラス名がついていたら
+			$('#page-top').removeClass('UpMove');//UpMoveというクラス名を除き
+			$('#page-top').addClass('DownMove');//DownMoveというクラス名を#page-topに付与
+		}
+	}
+}
+
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function () {
+	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+});
+
+// ページが読み込まれたらすぐに動かしたい場合の記述
+$(window).on('load', function () {
+	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+});
+
+// #page-topをクリックした際の設定
+$('#page-top a').click(function () {
+    $('body,html').animate({
+        scrollTop: 0//ページトップまでスクロール
+    }, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+    return false;//リンク自体の無効化
+});
+</script>
+</html>
